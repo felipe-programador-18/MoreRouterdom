@@ -7,8 +7,8 @@ const Nav = () => {
     return(
     <div className='App' >
      <nav>
-        <Link to='/home' > Home </Link>
-        <Link to='/' >Sobre</Link>
+        <Link to='/' > Home </Link>
+        <Link to='/sobre' >Sobre</Link>
      </nav>
      </div>  )
 }
