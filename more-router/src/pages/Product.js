@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { useFetch } from '../hooks/useFetch';
 
 const Product = () => {
@@ -23,6 +23,8 @@ const Product = () => {
     {product && (<div>
          <h1>{product.name}</h1>
          <p className='gave' >R$:{product.price}</p>
+         {/* 6-started create nested routes */}
+         <Link to={`/products/${product.id}/info`} >More information!</Link>
     </div>)}
       
     </>)
