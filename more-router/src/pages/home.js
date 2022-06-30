@@ -12,6 +12,8 @@ const Sobre = () => {
 
     return ( <div >
             <h1>Produtos</h1>
+
+            {loading && <p>loading ......</p>}
             {error && <p>{error} </p>  }
            <ul className='products'>
               { items && items.map((item) => (<li key={item.id}>
