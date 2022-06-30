@@ -6,7 +6,9 @@ const Product = () => {
    //how useparams i gotten all object inside api!!
    // router dynamic!! 
    const { id } = useParams();
-   
+   // here i get all parameter that aplication that putting  id!!
+
+
    //5 loaded date individuals!!
    //theoritical i create url to get url of door 3000
    const url = "http://localhost:3000/products/" + id;
@@ -20,7 +22,7 @@ const Product = () => {
     
     {product && (<div>
          <h1>{product.name}</h1>
-         <p>R$:{product.price}</p>
+         <p className='gave' >R$:{product.price}</p>
     </div>)}
       
     </>)
