@@ -19,6 +19,11 @@ nav a:hover {
   color:blue
 }
 
+.active{
+  background-color:black;
+  color: white;
+}
+
 ul{
   margin-top: 150px;
 }
