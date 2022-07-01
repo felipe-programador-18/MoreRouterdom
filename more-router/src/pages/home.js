@@ -16,10 +16,10 @@ const Sobre = () => {
             {loading && <p>loading ......</p>}
             {error && <p>{error} </p>  }
            <ul className='products'>
-              { items && items.map((item) => (<li key={item.id}>
-                <h1> {item.name} </h1> 
-                <p>  {item.price} </p>  
-                <Link to={`/products/${item.id}`} >Details!</Link>
+              { items && items.map((product) => (<li key={product.id}>
+                <h1> {product.name} </h1> 
+                <p> R$: {product.price} </p>  
+                <Link to={`/products/${product.id}`} >Details!</Link>
                 </li>))}
            </ul>
     </div>)
