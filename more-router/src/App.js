@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+
 import './App.css';
 import {Routes, Route} from 'react-router-dom'
 import Sobre from './pages/home';
@@ -7,7 +7,7 @@ import AnotherSobre from './pages/AnotherSobre';
 import Product from './pages/Product';
 import Info from './pages/Info';
 import NotFound from './pages/NotFound';
-import SearchBar from './Navbar/SearchBar';
+import {SearchBar} from './Navbar/SearchBar';
 import Search from './pages/Search';
 
 function App() {
