@@ -1,6 +1,6 @@
 
 import './App.css';
-import {Routes, Route} from 'react-router-dom'
+import {Routes, Route, Navigate} from 'react-router-dom'
 import Sobre from './pages/home';
 import Nav from './Navbar/Nav'
 import AnotherSobre from './pages/AnotherSobre';
@@ -11,8 +11,7 @@ import {SearchBar} from './Navbar/SearchBar';
 import Search from './pages/Search';
 
 function App() {
- 
-  
+   
 return ( <div className='App' >
      <h1>React Router</h1>
      <Nav/>
@@ -27,6 +26,9 @@ return ( <div className='App' >
       <Route path='/search' element={<Search/> }  />
       {/*last router created about 404*/}
       <Route path='*' element= {<NotFound/>}  />
+
+      {/* redirect router!! */}
+      <Route path='/company' element={<Navigate to='/sobre' /> } />
     </Routes>
     
   </div> );
