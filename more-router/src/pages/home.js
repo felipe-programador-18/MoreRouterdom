@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 const Sobre = () => {
     const url = "http://localhost:3000/products"
     //get date about destructment assistment
+    // here i am caught about hoock personalities!!
     const {data:items,loading, error} = useFetch(url)
 
     return ( <div >
