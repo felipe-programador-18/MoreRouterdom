@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+
 import { useSearchParams, Link } from "react-router-dom"
 import { useFetch } from "../hooks/useFetch"
 
