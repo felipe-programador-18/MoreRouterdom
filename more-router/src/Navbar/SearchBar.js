@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import {useState} from 'react'
 
+// with use navigator i got works inside components!!!
 export const SearchBar = () => {
   const navigate = useNavigate()
   const [query, setQuery] = useState()
@@ -8,7 +9,6 @@ export const SearchBar = () => {
   const handlSumit = (e) => {
     e.preventDefault();
     navigate("/search?q=" + query)
-
   }
 
    return(<>
@@ -21,7 +21,6 @@ export const SearchBar = () => {
             </label>
 
          </form>
-   
    
    </>)
 }
