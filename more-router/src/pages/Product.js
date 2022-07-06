@@ -20,7 +20,7 @@ const Product = () => {
     {error && <p>ERROR HERE!!!</p> }
     {loading && <p>Carregando ....</p>}
     
-    {product && (<div>
+    { product && (<div>
          <h1>{product.name}</h1>
          <p className='gave' >R$:{product.price}</p>
          {/* 6-started create nested routes */}
