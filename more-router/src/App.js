@@ -10,6 +10,7 @@ import NotFound from './pages/NotFound';
 import {SearchBar} from './Navbar/SearchBar';
 import Search from './pages/Search';
 
+
 function App() {
    
 return ( <div className='App' >
