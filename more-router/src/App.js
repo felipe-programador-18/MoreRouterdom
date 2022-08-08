@@ -9,6 +9,7 @@ import Info from './pages/Info';
 import NotFound from './pages/NotFound';
 import {SearchBar} from './Navbar/SearchBar';
 import Search from './pages/Search';
+import InformaAbout from './pages/createFile';
 
 
 function App() {
@@ -20,7 +21,8 @@ return ( <div className='App' >
     <Routes>
       <Route path='/' element={<Sobre/>} />
       <Route path='/sobre' element={<AnotherSobre/> } />
-      <Route path='/products/:id' element={<Product/>}  /> 
+      <Route path='/products/:id' element={<Product/>}  />
+      <Route path='/products/:id/other' element={<InformaAbout/>} /> 
       {/* nested router */}
       <Route path='/products/:id/info' element={ <Info/>}  />
       
