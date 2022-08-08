@@ -5,7 +5,7 @@ import { useFetch } from '../hooks/useFetch';
 const Product = () => {
    //how useparams i gotten all object inside api!!
    // router dynamic!! 
-   const { id } = useParams();
+   const {id} = useParams()
    // here i get all parameter that aplication that putting  id!!
 
 
